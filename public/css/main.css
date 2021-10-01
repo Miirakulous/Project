@@ -1,0 +1,204 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    text-rendering: optimizeLegibility;
+    text-shadow: 0px 0px 1px rgba(255, 255, 255, .1);
+}
+
+body {
+    font: 100% arial, sans-serif;
+    text-align: center;
+    margin: auto;
+    width: 960px;
+    max-width: 98%;
+}
+
+p {
+    margin: 0 10px 10px
+}
+
+a {
+    padding: 5px;
+    text-decoration: none;
+    color: #000000;
+}
+
+header {
+    background-color: #F3F2ED;
+}
+
+header h1 {
+    height: 80px;
+    line-height: 80px;
+    margin: 0;
+    padding-left: 10px;
+}
+
+div p {
+    line-height: 1.4
+}
+
+nav ul {
+    margin: 15px 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav li {
+    margin-bottom: 5px;
+    display: inline;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+    padding: 5px 10px;
+}
+
+section {
+    width: 90%;
+    margin: 20px;
+    float: left;
+    text-align: left;
+}
+
+#wrapper {
+    float: left;
+    width: 100%
+}
+
+nav {
+    float: left;
+    width: 100%;
+    background: #F6F0E0;
+}
+
+#login {
+    padding: 120px;
+    border: 1px solid #faedab;
+}
+
+.form-group label {
+    padding: 10px;
+    font-weight: bold;
+    font-size: large;
+    display: block;
+}
+
+.form-group input[type="text"],
+input[type="password"],
+input[type="file"] {
+    padding: 10px;
+}
+
+input[type="submit"] {
+    width: 50%;
+    margin: 10px;
+    align-content: center;
+    padding: 10px;
+}
+
+div.dash {
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
+footer {
+    clear: both;
+    width: 96%;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: -webkit-sticky;
+    position: static;
+    width: 100%;
+    background: #faedab;
+}
+
+
+/* --------Responsive layout ---------*/
+
+
+/* Create three equal columns that floats next to each other */
+
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#shadow {
+    position: fixed;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, .2);
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, .4);
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, .2);
+    z-index: 2;
+}
+
+#bars {
+    width: 100%;
+    height: 42px;
+    margin-top: -20px;
+}
+
+#bars div {
+    position: relative;
+    float: left;
+    width: 54px;
+    height: 100%;
+    margin-right: 55px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, .35);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, .35);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, .35);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'BergamoProRegular', georgia, serif;
+    line-height: 22px;
+    margin-bottom: 22px;
+}
+
+h1,
+h1 a {
+    font-size: 33px;
+    color: #333230;
+    line-height: 44px;
+}
+
+table {
+    margin: auto;
+    padding: 30px;
+    font-size: 120%;
+}
+
+table th {
+    border-bottom: 3px solid #b3a147;
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}

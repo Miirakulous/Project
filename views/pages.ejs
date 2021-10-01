@@ -1,0 +1,31 @@
+<%- include('layouts/header'); -%>
+
+<%- include('layouts/dashnav'); -%>
+
+<main>
+    <table>
+        <thead>
+            <tr>
+                <th>Page</th>
+                <th>Manage</th>
+                <th>Manage</th>
+            </tr>
+        </thead>
+        <tbody>
+        <%
+            for(var page of pages) { 
+                %>
+                <tr>
+                    <td><%= page.title %></td>
+                    <td><a href="/editpage/<%= page._id %>">Edit</a></td>
+                    <td><a href="/delete/<%= page._id %>">Delete</a></td>
+                </tr>
+                <%
+            }
+        %>
+            
+        </tbody>
+    </table>
+</main>
+
+<%- include('layouts/footer'); -%>

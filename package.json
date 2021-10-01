@@ -1,0 +1,42 @@
+{
+    "dependencies": {
+        "ejs": "^3.1.6",
+        "express": "^4.17.1",
+        "express-fileupload": "^1.2.1",
+        "express-session": "^1.17.2",
+        "express-validator": "^6.12.1",
+        "mongoose": "^5.13.6",
+        "normalize.css": "^8.0.1"
+    },
+    "name": "project",
+    "version": "1.0.0",
+    "description": "Final Web Design and Development project. Website/Blog with Content Management System",
+    "main": "index.js",
+    "scripts": {
+        "serve": "nodemon",
+        "watch": "nodemon",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "website",
+        "final",
+        "project",
+        "project",
+        "cms",
+        "content",
+        "management",
+        "system",
+        "wysiwig",
+        "blog",
+        "art",
+        "artist"
+    ],
+    "author": "Miirakulous",
+    "license": "MIT",
+    "devDependencies": {
+        "nodemon": "^2.0.12"
+    },
+    "nodemonConfig": {
+        "delay": "4000"
+    }
+}

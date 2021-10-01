@@ -1,0 +1,26 @@
+<%- include('layouts/header'); -%>
+
+<%- include('layouts/dashnav'); -%>
+
+<%
+    if(typeof(er) != 'undefined') {
+        for(var error of er) {
+            %>
+    <p id="error">
+        <%= error.message %>
+    </p>
+<%
+        }
+    }
+%>
+
+
+<main>
+<div class="dash">
+    <h2>Edit Page</h2>
+    <%= message %>
+</div>
+
+</main>
+
+<%- include('layouts/footer'); -%>

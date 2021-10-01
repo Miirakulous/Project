@@ -1,0 +1,37 @@
+<%- include('layouts/header'); -%>
+
+<%- include('layouts/dashnav'); -%>
+
+<%
+    if(typeof(er) != 'undefined') {
+        for(var error of er) {
+            %>
+    <p id="error">
+        <%= error.message %>
+    </p>
+<%
+        }
+    }
+%>
+
+
+<main>
+    <form method="post" action="" enctype="multipart/form-data">
+        <div class="form-group">
+        <label for="title">Page Title</label>
+        <input id="title" type="text" name="title" value="<%= page.title %>"><br/>
+        </div>
+        <div class="form-group">
+        <label for="image">Page Image</label>
+        <input id="image" type="file" name="image" value="<%= page.imageName %>"><br/>
+        </div>
+        <div class="form-group">
+        <label for="edcontent">Page Content</label>
+        <input id="edcontent" type="text" name="edcontent" value="<%- page.content %>"><br/>
+        </div>
+        <input type="submit" value="Submit">
+
+    </form>
+</main>
+
+<%- include('layouts/footer'); -%>

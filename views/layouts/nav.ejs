@@ -1,0 +1,16 @@
+<nav>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <%
+        for(var page of pages){
+            %>
+            <li><a href="<%= page._id %>"><%= page.title %></a></li>
+                
+            <%
+          }
+    %>
+        
+    </ul>
+</nav>
+
+
